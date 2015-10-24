@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CambiarPantalla</string>
+    <string name="titulo_actividad_uno">Agrega un Contacto :)</string>
+    <string name="titulo_actividad_dos">Ingresa tus Datos</string>
+</resources>
