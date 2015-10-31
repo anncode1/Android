@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MiLampara</string>
+    <string name="mensaje_no_flash">No se detecto un Flash :(</string>
+    <string name="mensaje_encendiendo_flash">Flash Encendido</string>
+    <string name="mensaje_apagando_flash">Flash Apagado</string>
+</resources>
