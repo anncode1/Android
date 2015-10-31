@@ -5,7 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
     <include
         android:id="@+id/miToolbar"
@@ -16,30 +17,35 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
+        <!--<TextView
             android:id="@+id/tvTitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/titulo_actividad_uno"
             android:layout_gravity="center"
             android:textSize="@dimen/texto_grande"
+            />-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/cocodrilo"
+            android:layout_gravity="center"
+
             />
 
         <android.support.design.widget.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/ic_add_user"
+            android:src="@mipmap/ic_like"
             app:fabSize="normal"
             app:elevation="@dimen/elevacion_boton"
             app:borderWidth="@dimen/borde_boton"
             android:layout_gravity="bottom|right"
             android:layout_marginRight="@dimen/margen_boton"
             android:layout_marginBottom="@dimen/margen_boton"
-            android:stateListAnimator="@anim/elevacion_boton"
             android:onClick="irAgregarDatos"
+            app:pressedTranslationZ="@dimen/elevacion_boton"
             />
-
-        <!-- Comentario -->
 
     </FrameLayout>
 

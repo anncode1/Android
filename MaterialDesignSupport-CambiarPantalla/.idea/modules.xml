@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MaterialDesignSupport-CambiarPantall.iml" filepath="$PROJECT_DIR$/MaterialDesignSupport-CambiarPantall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaterialDesignSupport-CambiarPantalla.iml" filepath="$PROJECT_DIR$/MaterialDesignSupport-CambiarPantalla.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
