@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.anncode.fragments.MainActivity"
+    android:orientation="horizontal"
+    >
+
+    <fragment
+        android:id="@+id/frgLista"
+        android:layout_width="@dimen/fragment_width"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:name="com.anncode.fragments.Fragments.ListaFragment"
+        tools:layout="@layout/fragment_lista"
+        />
+
+    <fragment
+        android:id="@+id/frgDetalle"
+        android:layout_width="@dimen/fragment_width"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:name="com.anncode.fragments.Fragments.DetalleFragment"
+        tools:layout="@layout/fragment_detalle"
+        />
+
+
+</LinearLayout>
