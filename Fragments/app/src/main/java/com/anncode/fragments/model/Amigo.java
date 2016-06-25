@@ -1,9 +1,11 @@
 package com.anncode.fragments.model;
 
+import java.io.Serializable;
+
 /**
  * Created by anahisalgado on 18/06/16.
  */
-public class Amigo {
+public class Amigo implements Serializable{
 
     private String nombre;
     private String twitter;
@@ -41,5 +43,10 @@ public class Amigo {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+
+    @Override
+    public String toString() {
+        return this.nombre;
     }
 }

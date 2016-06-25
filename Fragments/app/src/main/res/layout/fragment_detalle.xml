@@ -1,13 +1,69 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.DetalleFragment">
+    android:padding="@dimen/activity_horizontal_margin"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/tamano_nombre"
+        android:textStyle="bold"
+        />
 
-</FrameLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        >
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="@dimen/icon_twitter_size"
+            android:layout_height="@dimen/icon_twitter_size"
+            android:src="@drawable/twitter"
+            />
+
+        <TextView
+            android:id="@+id/tvTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/twitter_account"
+            android:textSize="@dimen/twitter_account_size"
+            android:layout_gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        >
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="@dimen/icon_twitter_size"
+            android:layout_height="@dimen/icon_twitter_size"
+            android:src="@drawable/phone"
+            />
+
+        <TextView
+            android:id="@+id/tvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textSize="@dimen/phone_number_size"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

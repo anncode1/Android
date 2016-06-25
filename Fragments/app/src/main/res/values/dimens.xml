@@ -3,4 +3,8 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fragment_width">0dp</dimen>
+    <dimen name="tamano_nombre">25sp</dimen>
+    <dimen name="icon_twitter_size">38dp</dimen>
+    <dimen name="twitter_account_size">20sp</dimen>
+    <dimen name="phone_number_size">20sp</dimen>
 </resources>
