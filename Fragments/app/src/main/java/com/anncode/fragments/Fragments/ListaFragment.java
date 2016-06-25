@@ -52,7 +52,19 @@ public class ListaFragment extends Fragment {
                     i.putExtra(getString(R.string.amigo), amigo);
                     startActivity(i);
                 }else if (getResources().getConfiguration().orientation == ORIENTATION_LANSCAPE){
-                    
+                    DetalleFragment detalleFragment = (DetalleFragment)
+                            getFragmentManager().findFragmentById(R.id.frgDetalle);
+                    TextView tvNombre = (TextView)
+                            detalleFragment.getView().findViewById(R.id.tvNombre);
+                    TextView tvTwitter = (TextView)
+                            detalleFragment.getView().findViewById(R.id.tvTwitter);
+                    TextView tvTelefono = (TextView)
+                            detalleFragment.getView().findViewById(R.id.tvTelefono);
+
+                    tvNombre.setText(amigo.getNombre());
+                    tvTwitter.setText(amigo.getTwitter());
+                    tvTelefono.setText(amigo.getTelefono());
+
                 }
 
 
