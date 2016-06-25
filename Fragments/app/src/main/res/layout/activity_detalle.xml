@@ -3,10 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.anncode.fragments.DetalleActivity">
+
+    <fragment
+        android:id="@+id/frgDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.anncode.fragments.Fragments.DetalleFragment"
+        tools:layout="@layout/fragment_detalle"
+        />
 
 </RelativeLayout>

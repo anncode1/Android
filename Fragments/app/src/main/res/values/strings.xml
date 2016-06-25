@@ -6,4 +6,6 @@
     <string name="nombre">Nombre</string>
     <string name="twitter_account">\@anncode</string>
     <string name="phone_number">55554444</string>
+    <string name="twitter_account_key">twitter</string>
+    <string name="amigo">amigo</string>
 </resources>

@@ -1,6 +1,7 @@
 package com.anncode.fragments.Fragments;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,7 +10,9 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
+import com.anncode.fragments.DetalleActivity;
 import com.anncode.fragments.R;
 import com.anncode.fragments.model.Amigo;
 
@@ -24,6 +27,8 @@ public class ListaFragment extends Fragment {
         // Required empty public constructor
     }
 
+    public static final int ORIENTATION_PORTRAIT = 1;
+    public static final int ORIENTATION_LANSCAPE = 2;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -42,6 +47,13 @@ public class ListaFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Amigo amigo = (Amigo) lstAmigos.getAdapter().getItem(position);
 
+                if (getResources().getConfiguration().orientation == ORIENTATION_PORTRAIT){
+                    Intent i = new Intent(getContext(), DetalleActivity.class);
+                    i.putExtra(getString(R.string.amigo), amigo);
+                    startActivity(i);
+                }else if (getResources().getConfiguration().orientation == ORIENTATION_LANSCAPE){
+                    
+                }
 
 
             }
