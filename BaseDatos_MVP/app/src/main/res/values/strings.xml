@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BaseDatos</string>
+    <string name="saveButton">Save</string>
+    <string name="showButton">Show</string>
+    <string name="result">Result</string>
+    <string name="title_activity_lista_contactos">ListaContactosActivity</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="twitter">Twitter</string>
+</resources>
